@@ -1,83 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
-		<meta name="author" content="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-		<title>Aplicativo de Acidentes</title>
+	<title>Aplicativo de Acidentes</title>
 
-		<!-- Bootstrap Core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!-- Custom CSS -->
-		<link href="css/3-col-portfolio.css" rel="stylesheet">
-	</head>
-	<body>
-		<!-- Navigation -->
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">App de Acidentes</a>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-		<!-- /.container -->
-		</nav>
-		<!-- Formulario -->
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link href="css/3-col-portfolio.css" rel="stylesheet">
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
-			<div class="row" align="center">
-				<img src="https://www.crowdfunder.com/img/p-avatar.jpg">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">App de Acidentes</a>
 			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-push-3">
-					<h4>E-mail</h4>
-					<div class="input-group">
-						<span class="input-group-addon" id="basic-addon1"></span>
-						<input type="text" class="form-control" placeholder="Insira seu e-mail" aria-describedby="basic-addon1">
-					</div>
-				</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="home.html">Mapa</a>
+					</li>
+					<li>
+						<a href="sinalizarAcidente.html">Sinalizar Acidente</a>
+					</li>
+					<li>
+						<a href="historicoAcidentes.html">Historico de Acidentes</a>
+					</li>
+					<li>
+						<a href="menuDeRotas.html">Rotas Salvas</a>
+					</li>
+					<li>
+						<a href="configuracoesDaConta.html">Configuracoes da Conta</a>
+					</li>
+					<li>
+						<a href="index.html">Logout</a>
+					</li>
+				</ul>
 			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-push-3">
-					<h4>Senha</h4>
-					<div class="input-group">
-						<span class="input-group-addon" id="basic-addon1"></span>
-						<input type="password" class="form-control" placeholder="Insira sua senha" aria-describedby="basic-addon1">
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-sm-push-3" style="margin-top: 25px;">
-					<a href="menuDeRotas.html"><button class="btn btn-info btn-block login" type="submit">Entrar</button></a>
-          <div class="container">
-          <a href="cadastroConta.html">Registrar-se</a>
-        </div>
-        <div class="container">
-          <a href="javascript:AlertIt();">Esqueci a senha</a>
-          </div>
-				</div>
-			</div>
-
+			<!-- /.navbar-collapse -->
 		</div>
+		<!-- /.container -->
+	</nav>
+	<!-- Formulario -->
+	<div class="container">
+		<div class="row">
+			<div class="page-header col-md-6 col-sm-push-3">
+				<h3>Sinaliza</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="jumbotron col-md-6 col-sm-push-3">
+				O Sinaliza é um aplicativo desenvolvido para auxiliar motoristas no trânsito. Com o auxílio de um GPS, permite atualizações em tempo real em um mapa com informações sobre pontos específicos das cidades.
+				<br><br>Os mapas com as notificações são atualizados a partir de contribuições dos próprios usuários que trafegam nas vias. Além de informações sobre a velocidade das ruas, o aplicativo permite informar e receber alertas sobre acidentes, perigos, ruas bloqueadas e demais situações que o motorista vai encontrar pelo caminho.
+				<br><br>As informações enviadas pelos motoristas serão registradas automaticamente no banco de dados, inclusive com a localização exata da ocorrência, marcada via GPS.
+				<br><br>Com isso, o usuário pode traçar a melhor rota para o destino dele sabendo das condições de tráfego que vai encontrar e pode refazer o trajeto, se achar conveniente. Imagine milhões de motoristas nas vias trabalhando juntos em um objetivo comum: escapar do trânsito e fazer com que todos peguem a melhor rota, para ir e voltar do trabalho, todos os dias.
+			</div>
+		</div>
+	</div>
 
-		<!-- Scripts -->
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      function AlertIt() {
-        var answer = confirm ("So lamento")
-        if (answer)
-          window.location="index.html";
-        }
-        </script>
-	</body>
+	<!-- Scripts -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	function AlertIt() {
+		var answer = confirm ("So lamento")
+		if (answer)
+		window.location="index.html";
+	}
+	</script>
+</body>
 </html>
